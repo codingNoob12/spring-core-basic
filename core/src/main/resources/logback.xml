@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+  <appender class="ch.qos.logback.core.ConsoleAppender" name="STDOUT">
+    <encoder>
+      <pattern>${CONSOLE_PATTERN}</pattern>
+    </encoder>
+  </appender>
+  <property name="CONSOLE_PATTERN"
+    value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%5level) %cyan(%logger{36}) -%kvp- %msg%n"/>
+  <root level="DEBUG">
+    <appender-ref ref="STDOUT"/>
+  </root>
+</configuration>
